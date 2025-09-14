@@ -975,9 +975,9 @@
   // Update keyboard hint based on current mode
   function updateKeyboardHint() {
     if (keyboardMode === "numbers") {
-      keyboardHint.select(".keyboard-hint-text").text("Press 1-8 to switch years, Esc to reset view");
+      keyboardHint.select(".keyboard-hint-text").html("Press 1-8 to switch years, Esc to reset view");
     } else {
-      keyboardHint.select(".keyboard-hint-text").text("Type last 2 digits of year (e.g., '99' for 1999), Esc to reset view");
+      keyboardHint.select(".keyboard-hint-text").html("Type last 2 digits of year (e.g., '99' for 1999), Esc to reset view.<br>Tap on district to view district votes, Type L to view Likoma");
     }
   }
 
